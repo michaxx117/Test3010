@@ -115,7 +115,5 @@ public class MainActivity extends AppCompatActivity {
         pytanieArrayList.add(new Pytanie(R.drawable.auto, "Czy te auto to Audi", false, "Spojrz na znaczek"));
         pytanieArrayList.add(new Pytanie(R.drawable.jabko, "Czy jablko jest popularne w Polsce", true, "Sprawdz w sklepach"));
         pytanieArrayList.add(new Pytanie(R.drawable.flaga, "Czy to jest flaga Niemiec", false, "Zobacz na mapie"));
-
-
     }
 }
