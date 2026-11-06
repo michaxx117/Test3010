@@ -24,6 +24,7 @@ public class Pytanie {
         this.trescPytania = trescPytania;
         this.odpowiedz = odpowiedz;
         poprawnaOdpowiedz = false;
+        wykoszystanoPodpowiedz = false;
     }
 
     public int getIdZdjecia() {
@@ -44,5 +45,21 @@ public class Pytanie {
 
     public void setCzyPoprawnaOdpowiedz(boolean czyPoprawnaOdpowiedz){
         this.poprawnaOdpowiedz = czyPoprawnaOdpowiedz;
+    }
+
+    public String getPodpowiedz() {
+        return podpowiedz;
+    }
+
+    public void setPodpowiedz(String podpowiedz) {
+        this.podpowiedz = podpowiedz;
+    }
+
+    public boolean isWykoszystanoPodpowiedz() {
+        return wykoszystanoPodpowiedz;
+    }
+
+    public void setWykoszystanoPodpowiedz(boolean wykoszystanoPodpowiedz) {
+        this.wykoszystanoPodpowiedz = wykoszystanoPodpowiedz;
     }
 }

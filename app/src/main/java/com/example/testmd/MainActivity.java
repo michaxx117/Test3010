@@ -18,7 +18,7 @@ import androidx.core.view.WindowInsetsCompat;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private ArrayList<Pytanie> pytanieArrayList;
+    protected static ArrayList<Pytanie> pytanieArrayList;
     private ImageView imageView;
     private Button buttonTak, buttonNie, buttonNastepny, buttonPodpowiedz;
     private TextView textViewPytanie;
@@ -112,9 +112,9 @@ public class MainActivity extends AppCompatActivity {
     }
     private void wystawPytania(){
         pytanieArrayList = new ArrayList<>();
-        pytanieArrayList.add(new Pytanie(R.drawable.auto, "Czy te auto to Audi", false));
-        pytanieArrayList.add(new Pytanie(R.drawable.jabko, "Czy jablko jest popularne w Polsce", true));
-        pytanieArrayList.add(new Pytanie(R.drawable.flaga, "Czy to jest flaga Niemiec", false));
+        pytanieArrayList.add(new Pytanie(R.drawable.auto, "Czy te auto to Audi", false, "Spojrz na znaczek"));
+        pytanieArrayList.add(new Pytanie(R.drawable.jabko, "Czy jablko jest popularne w Polsce", true, "Sprawdz w sklepach"));
+        pytanieArrayList.add(new Pytanie(R.drawable.flaga, "Czy to jest flaga Niemiec", false, "Zobacz na mapie"));
 
 
     }
